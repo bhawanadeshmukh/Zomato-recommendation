@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Data Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff6347;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ff4500;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .content {
+            padding: 2em;
+            text-align: center;
+        }
+        .content h1 {
+            color: #ff6347;
+        }
+        .recommend-btn {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .recommend-btn:hover {
+            background-color: #ff4500;
+        }
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .food-animation {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zomato Data Recommendations</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <h1>Welcome to Zomato Data Recommendations</h1>
+        <p>Discover the best restaurants curated just for you. Click the button below to get personalized recommendations based on Zomato data.</p>
+        <a href="/recommend" class="recommend-btn food-animation">Get Recommendations</a>
+    </div>
+    <footer>
+        &copy; 2024 Zomato Data Recommendations. All rights reserved.
+    </footer>
+</body>
+</html>
